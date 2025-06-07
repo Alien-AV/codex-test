@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Consensus App</title>
+</head>
+<body>
+<h1>Consensus App</h1>
+<form id="ask-form">
+  <label>API Key: <input type="password" id="apiKey" required></label><br/>
+  <label>Provider:
+    <select id="provider">
+      <option value="openai">OpenAI</option>
+      <option value="openrouter">OpenRouter</option>
+    </select>
+  </label><br/>
+  <label>Model: <input type="text" id="model" value="gpt-3.5-turbo" required></label><br/>
+  <label>Question: <input type="text" id="question" required></label><br/>
+  <label>Count: <input type="number" id="count" value="10" min="1" max="20"></label><br/>
+  <button type="submit">Ask</button>
+</form>
+<pre id="output"></pre>
+<script type="module" src="script.js"></script>
+</body>
+</html>
